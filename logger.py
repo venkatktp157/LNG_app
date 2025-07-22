@@ -1,6 +1,6 @@
 import logging
 
-def setup_logger(name="anomaly_app", log_file="user_activity.log"):
+def setup_logger(name="LNG_app", log_file="user_activity.log"):
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
