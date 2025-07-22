@@ -15,6 +15,9 @@ def load_authenticator():
         cookie["expiry_days"]
     )
 
+    return authenticator
+
+
     # # 🧪 Optional Auth Debug Mode (for dev/testing only)
     # if st.sidebar.checkbox("Enable Auth Debug Mode"):
     #     st.write("Available usernames:", list(usernames.keys()))
