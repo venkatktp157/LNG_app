@@ -15,17 +15,17 @@ def load_authenticator():
         cookie["expiry_days"]
     )
 
-    # 🧪 Optional Auth Debug Mode (for dev/testing only)
-    if st.sidebar.checkbox("Enable Auth Debug Mode"):
-        st.write("Available usernames:", list(usernames.keys()))
+    # # 🧪 Optional Auth Debug Mode (for dev/testing only)
+    # if st.sidebar.checkbox("Enable Auth Debug Mode"):
+    #     st.write("Available usernames:", list(usernames.keys()))
 
-        selected_user = st.selectbox("Select user to test", usernames.keys())
-        test_password = st.text_input("Enter raw password to verify", type="password")
+    #     selected_user = st.selectbox("Select user to test", usernames.keys())
+    #     test_password = st.text_input("Enter raw password to verify", type="password")
 
-        if test_password:
-            hashed_pw = usernames[selected_user]["password"]
-            match = bcrypt.checkpw(test_password.encode(), hashed_pw.encode())
+    #     if test_password:
+    #         hashed_pw = usernames[selected_user]["password"]
+    #         match = bcrypt.checkpw(test_password.encode(), hashed_pw.encode())
 
-            st.success("✅ Password matches!" if match else "❌ Incorrect password for selected user")
+    #         st.success("✅ Password matches!" if match else "❌ Incorrect password for selected user")
 
-    return authenticator
+    # return authenticator
