@@ -6,5 +6,5 @@ openpyxl
 streamlit 
 plotly
 pyyaml
-streamlit-authenticator
+streamlit-authenticator==0.2.3
 bcrypt
