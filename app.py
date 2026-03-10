@@ -1569,7 +1569,7 @@ if auth_status:
 
                 # Special handling for N2
                 prev_N2m = df.at[i-1, 'N2m']
-                N2_consumed = (df.at[i, 'GE_cons'] + df.at[i, 'BLR_cons']) * (prev_N2m / df.at[i-1, 'ROB_cal'])
+                N2_consumed = (df.at[i, 'GE_cons'] + df.at[i, 'BLR_cons']) * 1500
                 N2_supplied = df.at[i, 'BDN'] * df.at[i, 'N2s']
                 df.at[i, 'N2m'] = max(prev_N2m - N2_consumed + N2_supplied, 0)
 
