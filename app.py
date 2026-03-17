@@ -63,6 +63,7 @@ if auth_status:
         "MOUNT COOK": ["LNG_TK1", "LNG_TK2"],
         "MOUNT ARARAT": ["LNG_TK1", "LNG_TK2"],  
         "ATLANTIC PEARL": ["LNG_TK1", "LNG_TK2"],  
+        "SEGWAY": ["LNG_TK1", "LNG_TK2"],
         "CMA CGM ARCTIC" : ["LNG_TK"],
         "CMA CGM BALI" : ["LNG_TK"],
         "CMA CGM DIGNITY" : ["LNG_TK"],
@@ -578,6 +579,12 @@ if auth_status:
             LNG_TK1_cap = 1816.435
             LNG_TK2_cap = 1818.006
             identity = "111k_tanker"    
+
+        elif ship_id in ["SEGWAY"]:   #155K_tanker
+            BOG_max = 1200    # to be ascertained
+            LNG_TK1_cap = 2556.93
+            LNG_TK2_cap = 2557.299
+            identity = "155k_tanker"     
 
         elif ship_id in ["STARWAY", "GREENWAY"]:   #150K_tanker
             BOG_max = 1200
@@ -1500,6 +1507,12 @@ if auth_status:
                 LNG_TK1_cap = 1816.435
                 LNG_TK2_cap = 1818.006
                 identity = "111k_tanker"
+
+            elif ship_id in ["SEGWAY"]:   #155K_tanker
+                BOG_max = 1200    # to be ascertained
+                LNG_TK1_cap = 2556.93
+                LNG_TK2_cap = 2557.299
+                identity = "155k_tanker"        
                     
             elif ship_id in ["STARWAY", "GREENWAY"]:   #150K_tanker
                 BOG_max = 1200
