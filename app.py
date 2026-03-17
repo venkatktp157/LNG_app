@@ -1317,20 +1317,25 @@ if auth_status:
 
                 # Create interpolators
                 level_list_interpolator = RegularGridInterpolator(
-                    (level_values, list_values), level_list_df.iloc[:, 1:].values, method="linear"
+                    (level_values, list_values), level_list_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False, fill_value=None
                 )
                 level_trim_interpolator = RegularGridInterpolator(
-                    (level_values, trim_values), level_trim_df.iloc[:, 1:].values, method="linear"
+                    (level_values, trim_values), level_trim_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False, fill_value=None
                 )
                 level_temp_interpolator = RegularGridInterpolator(
-                    (level_values, temp_values), level_temp_df.iloc[:, 1:].values, method="linear"
+                    (level_values, temp_values), level_temp_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False, fill_value=None
                 )
                 level_press_interpolator = RegularGridInterpolator(
-                    (level_values, press_values), level_press_df.iloc[:, 1:].values, method="linear"
+                    (level_values, press_values), level_press_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False, fill_value=None
                 )
 
                 level_volume_interpolator = RegularGridInterpolator(
-                    (level_values,), volume_values, method="linear"
+                    (level_values,), volume_values, method="linear",
+                    bounds_error=False,fill_value=None
                 ) 
 
                 # Interpolate values
