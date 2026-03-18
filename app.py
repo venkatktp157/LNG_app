@@ -64,6 +64,7 @@ if auth_status:
         "MOUNT ARARAT": ["LNG_TK1", "LNG_TK2"],  
         "ATLANTIC PEARL": ["LNG_TK1", "LNG_TK2"],  
         "SEGWAY": ["LNG_TK1", "LNG_TK2"],
+        "PATHWAY": ["LNG_TK1", "LNG_TK2"],
         "CMA CGM ARCTIC" : ["LNG_TK"],
         "CMA CGM BALI" : ["LNG_TK"],
         "CMA CGM DIGNITY" : ["LNG_TK"],
@@ -487,20 +488,25 @@ if auth_status:
 
                 # Create interpolators
                 level_list_interpolator = RegularGridInterpolator(
-                    (level_values, list_values), level_list_df.iloc[:, 1:].values, method="linear"
+                    (level_values, list_values), level_list_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False,fill_value=None
                 )
                 level_trim_interpolator = RegularGridInterpolator(
-                    (level_values, trim_values), level_trim_df.iloc[:, 1:].values, method="linear"
+                    (level_values, trim_values), level_trim_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False,fill_value=None
                 )
                 level_temp_interpolator = RegularGridInterpolator(
-                    (level_values, temp_values), level_temp_df.iloc[:, 1:].values, method="linear"
+                    (level_values, temp_values), level_temp_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False,fill_value=None
                 )
                 level_press_interpolator = RegularGridInterpolator(
-                    (level_values, press_values), level_press_df.iloc[:, 1:].values, method="linear"
+                    (level_values, press_values), level_press_df.iloc[:, 1:].values, method="linear",
+                    bounds_error=False,fill_value=None
                 )
 
                 level_volume_interpolator = RegularGridInterpolator(
-                    (level_values,), volume_values, method="linear"
+                    (level_values,), volume_values, method="linear",
+                    bounds_error=False,fill_value=None
                 ) 
 
                 # Interpolate values
@@ -580,7 +586,7 @@ if auth_status:
             LNG_TK2_cap = 1818.006
             identity = "111k_tanker"    
 
-        elif ship_id in ["SEGWAY"]:   #155K_tanker
+        elif ship_id in ["SEGWAY", "PATHWAY"]:   #155K_tanker
             BOG_max = 1200    # to be ascertained
             LNG_TK1_cap = 2556.93
             LNG_TK2_cap = 2557.299
@@ -1506,19 +1512,16 @@ if auth_status:
                 LNG_TK1_cap = 2324.113
                 LNG_TK2_cap = 2322.097
                 identity = "110k_tanker"
-
             elif ship_id in ["ATLANTIC PEARL"]:   #111K_tanker
                 BOG_max = 1200    # to be ascertained
                 LNG_TK1_cap = 1816.435
                 LNG_TK2_cap = 1818.006
                 identity = "111k_tanker"
-
-            elif ship_id in ["SEGWAY"]:   #155K_tanker
+            elif ship_id in ["SEGWAY", "PATHWAY"]:   #155K_tanker
                 BOG_max = 1200    # to be ascertained
                 LNG_TK1_cap = 2556.93
                 LNG_TK2_cap = 2557.299
-                identity = "155k_tanker"        
-                    
+                identity = "155k_tanker"                            
             elif ship_id in ["STARWAY", "GREENWAY"]:   #150K_tanker
                 BOG_max = 1200
                 LNG_TK1_cap = 2570.133
