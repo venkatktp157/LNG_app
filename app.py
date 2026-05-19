@@ -1527,7 +1527,7 @@ if auth_status:
                 LNG_TK1_cap = 2570.133
                 LNG_TK2_cap = 2571.517
                 identity = "150k_tanker"              
-            elif ship_id in ["QUETZAL", "COPAN"]:   #1400TEU_cont
+            elif ship_id in ["QUETZAL", "COPAN", "TISCAPA", "TOROGOZ"]:   #1400TEU_cont
                 BOG_max = 500
                 LNG_TK1_cap = 1613
                 identity = "1400TEU_cont"     
