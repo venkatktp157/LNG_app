@@ -1877,7 +1877,7 @@ if auth_status:
                         + (df['PKI']**5)*a5
                         + (df['PKI']**6)*a6)
 
-            df.loc[1:,'MN'] = df.loc[1:,'MN'].round(0)    
+            df.loc[1:,'MN'] = df.loc[1:,'MN'].round(2)    
             
             df['Min_MN'] = 70.0
 
