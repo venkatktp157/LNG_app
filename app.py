@@ -65,6 +65,7 @@ if auth_status:
         "ATLANTIC PEARL": ["LNG_TK1", "LNG_TK2"],
         "ATLANTIC AMBER": ["LNG_TK1", "LNG_TK2"],
         "ATLANTIC TOPAZ": ["LNG_TK1", "LNG_TK2"],
+        "ATLANTIC RUBY": ["LNG_TK1", "LNG_TK2"],
         "SEGWAY": ["LNG_TK1", "LNG_TK2"],
         "PATHWAY": ["LNG_TK1", "LNG_TK2"],
         "CMA CGM ARCTIC" : ["LNG_TK"],
@@ -582,7 +583,7 @@ if auth_status:
             LNG_TK2_cap = 2322.097
             identity = "110k_tanker"
 
-        elif ship_id in ["ATLANTIC PEARL", "ATLANTIC AMBER", "ATLANTIC TOPAZ"]:   #111K_tanker
+        elif ship_id in ["ATLANTIC PEARL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
             BOG_max = 1200    # to be ascertained
             LNG_TK1_cap = 1816.435
             LNG_TK2_cap = 1818.006
@@ -1514,7 +1515,7 @@ if auth_status:
                 LNG_TK1_cap = 2324.113
                 LNG_TK2_cap = 2322.097
                 identity = "110k_tanker"
-            elif ship_id in ["ATLANTIC PEARL", "ATLANTIC AMBER", "ATLANTIC TOPAZ"]:   #111K_tanker
+            elif ship_id in ["ATLANTIC PEARL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
                 BOG_max = 1200    # to be ascertained
                 LNG_TK1_cap = 1816.435
                 LNG_TK2_cap = 1818.006
