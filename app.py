@@ -93,6 +93,7 @@ if auth_status:
         "CMA CGM SILVERSTONE": ["LNG_TK1", "LNG_TK2"],
         "CMA CGM MONZA": ["LNG_TK1", "LNG_TK2"],
         "LAKE HERMAN": ["LNG_TK1", "LNG_TK2"],
+        "LAKE SHIRASAGI": ["LNG_TK1", "LNG_TK2"],
         "LAKE ANNECY": ["LNG_TK1", "LNG_TK2"],
         "LAKE LUGU": ["LNG_TK1", "LNG_TK2"],
         "LAKE QARAOUN": ["LNG_TK1", "LNG_TK2"],
@@ -570,7 +571,7 @@ if auth_status:
             identity = "ZIM_cont"       
 
         elif ship_id  in ["CMA CGM DAYTONA", "CMA CGM INDIANAPOLIS", "CMA CGM MONACO", "CMA CGM SILVERSTONE",
-                        "CMA CGM MONZA", "LAKE HERMAN", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
+                        "CMA CGM MONZA", "LAKE HERMAN", "LAKE SHIRASAGI", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
                         "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
             BOG_max = 600
             LNG_TK1_cap = 2013.699
@@ -1504,7 +1505,7 @@ if auth_status:
                 LNG_TK1_cap = 6125.285    
                 identity = "ZIM_cont"       
             elif ship_id in ["CMA CGM DAYTONA", "CMA CGM INDIANAPOLIS", "CMA CGM MONACO", "CMA CGM SILVERSTONE",
-                            "CMA CGM MONZA", "LAKE HERMAN", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
+                            "CMA CGM MONZA", "LAKE HERMAN", "LAKE SHIRASAGI", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
                             "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
                 BOG_max = 600
                 LNG_TK1_cap = 2013.699
