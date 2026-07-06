@@ -96,6 +96,11 @@ if auth_status:
         "LAKE SHIRASAGI": ["LNG_TK1", "LNG_TK2"],
         "LAKE ANNECY": ["LNG_TK1", "LNG_TK2"],
         "LAKE LUGU": ["LNG_TK1", "LNG_TK2"],
+        "LAKE ROTORUA": ["LNG_TK1", "LNG_TK2"],
+        "LAKE WAKATIPU": ["LNG_TK1", "LNG_TK2"],
+        'LAKE CARRERA': ["LNG_TK1", "LNG_TK2"],
+        "LAKE VILLARICA": ["LNG_TK1", "LNG_TK2"],
+        "LAKE VICTORIA": ["LNG_TK1", "LNG_TK2"],        
         "LAKE QARAOUN": ["LNG_TK1", "LNG_TK2"],
         "LAKE SAINT ANNE": ["LNG_TK1", "LNG_TK2"],
         "LAKE TRAVIS": ["LNG_TK1", "LNG_TK2"],
@@ -572,7 +577,7 @@ if auth_status:
 
         elif ship_id  in ["CMA CGM DAYTONA", "CMA CGM INDIANAPOLIS", "CMA CGM MONACO", "CMA CGM SILVERSTONE",
                         "CMA CGM MONZA", "LAKE HERMAN", "LAKE SHIRASAGI", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
-                        "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
+                        "LAKE ROTORUA", "LAKE WAKATIPU", "LAKE CARRERA", "LAKE VILLARICA", "LAKE VICTORIA", "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
             BOG_max = 600
             LNG_TK1_cap = 2013.699
             LNG_TK2_cap = 2014.748
@@ -1506,7 +1511,7 @@ if auth_status:
                 identity = "ZIM_cont"       
             elif ship_id in ["CMA CGM DAYTONA", "CMA CGM INDIANAPOLIS", "CMA CGM MONACO", "CMA CGM SILVERSTONE",
                             "CMA CGM MONZA", "LAKE HERMAN", "LAKE SHIRASAGI", "LAKE ANNECY", "LAKE LUGU", "LAKE QARAOUN", "LAKE SAINT ANNE",
-                            "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
+                            "LAKE ROTORUA", "LAKE WAKATIPU", "LAKE CARRERA", "LAKE VILLARICA", "LAKE VICTORIA", "LAKE TRAVIS", "LAKE TAZAWA"]: #PCTC
                 BOG_max = 600
                 LNG_TK1_cap = 2013.699
                 LNG_TK2_cap = 2014.748
