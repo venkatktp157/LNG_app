@@ -56,6 +56,7 @@ if auth_status:
         "MOUNT OSSA": ["LNG_TK1", "LNG_TK2"],
         "MOUNT JADEITE": ["LNG_TK1", "LNG_TK2"],
         "MOUNT API": ["LNG_TK1", "LNG_TK2"],
+        "MOUNT ASAHI": ["LNG_TK1", "LNG_TK2"],
         "MOUNT AMELIOR": ["LNG_TK1", "LNG_TK2"],
         "MOUNT HENG": ["LNG_TK1", "LNG_TK2"],
         "MOUNT GOWER": ["LNG_TK1", "LNG_TK2"],
@@ -610,7 +611,13 @@ if auth_status:
         elif ship_id in ["QUETZAL", "COPAN","TISCAPA", "TOROGOZ"]:   #1400TEU_cont
             BOG_max = 500
             LNG_TK1_cap = 1613
-            identity = "1400TEU_cont"    
+            identity = "1400TEU_cont"   
+
+        elif ship_id  in ["MOUNT ASAHI"]: #210k_bulk_cssc
+            BOG_max = 500
+            LNG_TK1_cap = 3051.291
+            LNG_TK2_cap = 3050.947
+            identity = "210k_bulk_cssc"  
     
         # Opening Tank Inputs
         st.subheader("Opening Tank Details")
@@ -1539,7 +1546,12 @@ if auth_status:
             elif ship_id in ["QUETZAL", "COPAN", "TISCAPA", "TOROGOZ"]:   #1400TEU_cont
                 BOG_max = 500
                 LNG_TK1_cap = 1613
-                identity = "1400TEU_cont"     
+                identity = "1400TEU_cont"  
+            elif ship_id  in ["MOUNT ASAHI"]: #210k_bulk_cssc
+                BOG_max = 500
+                LNG_TK1_cap = 3051.291
+                LNG_TK2_cap = 3050.947
+                identity = "210k_bulk_cssc"                              
 
             # Temperature & Pressure Corrections
             base_dir = os.path.dirname(os.path.abspath(__file__))
