@@ -70,6 +70,7 @@ if auth_status:
         "ATLANTIC RUBY": ["LNG_TK1", "LNG_TK2"],
         "SEGWAY": ["LNG_TK1", "LNG_TK2"],
         "PATHWAY": ["LNG_TK1", "LNG_TK2"],
+        "RIDGEWAY": ["LNG_TK1", "LNG_TK2"],
         "CMA CGM ARCTIC" : ["LNG_TK"],
         "CMA CGM BALI" : ["LNG_TK"],
         "CMA CGM DIGNITY" : ["LNG_TK"],
