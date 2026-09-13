@@ -57,6 +57,7 @@ if auth_status:
         "MOUNT JADEITE": ["LNG_TK1", "LNG_TK2"],
         "MOUNT API": ["LNG_TK1", "LNG_TK2"],
         "MOUNT ASAHI": ["LNG_TK1", "LNG_TK2"],
+        "MOUNT KITA": ["LNG_TK1", "LNG_TK2"],
         "MOUNT AMELIOR": ["LNG_TK1", "LNG_TK2"],
         "MOUNT HENG": ["LNG_TK1", "LNG_TK2"],
         "MOUNT GOWER": ["LNG_TK1", "LNG_TK2"],
@@ -64,6 +65,7 @@ if auth_status:
         "MOUNT COOK": ["LNG_TK1", "LNG_TK2"],
         "MOUNT ARARAT": ["LNG_TK1", "LNG_TK2"],  
         "ATLANTIC PEARL": ["LNG_TK1", "LNG_TK2"],
+        "ATLANTIC ZENITH": ["LNG_TK1", "LNG_TK2"],
         "ATLANTIC CORAL": ["LNG_TK1", "LNG_TK2"],
         "ATLANTIC AMBER": ["LNG_TK1", "LNG_TK2"],
         "ATLANTIC TOPAZ": ["LNG_TK1", "LNG_TK2"],
@@ -592,7 +594,7 @@ if auth_status:
             LNG_TK2_cap = 2322.097
             identity = "110k_tanker"
 
-        elif ship_id in ["ATLANTIC PEARL", "ATLANTIC CORAL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
+        elif ship_id in ["ATLANTIC PEARL", "ATLANTIC ZENITH", "ATLANTIC CORAL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
             BOG_max = 1200    # to be ascertained
             LNG_TK1_cap = 1816.435
             LNG_TK2_cap = 1818.006
@@ -615,7 +617,7 @@ if auth_status:
             LNG_TK1_cap = 1613
             identity = "1400TEU_cont"   
 
-        elif ship_id  in ["MOUNT ASAHI"]: #210k_bulk_cssc
+        elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA"]: #210k_bulk_cssc
             BOG_max = 500
             LNG_TK1_cap = 3051.291
             LNG_TK2_cap = 3050.947
@@ -1530,7 +1532,7 @@ if auth_status:
                 LNG_TK1_cap = 2324.113
                 LNG_TK2_cap = 2322.097
                 identity = "110k_tanker"
-            elif ship_id in ["ATLANTIC PEARL", "ATLANTIC CORAL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
+            elif ship_id in ["ATLANTIC PEARL", "ATLANTIC ZENITH", "ATLANTIC CORAL", "ATLANTIC AMBER", "ATLANTIC TOPAZ", "ATLANTIC RUBY"]:   #111K_tanker
                 BOG_max = 1200    # to be ascertained
                 LNG_TK1_cap = 1816.435
                 LNG_TK2_cap = 1818.006
@@ -1549,7 +1551,7 @@ if auth_status:
                 BOG_max = 500
                 LNG_TK1_cap = 1613
                 identity = "1400TEU_cont"  
-            elif ship_id  in ["MOUNT ASAHI"]: #210k_bulk_cssc
+            elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA"]: #210k_bulk_cssc
                 BOG_max = 500
                 LNG_TK1_cap = 3051.291
                 LNG_TK2_cap = 3050.947
