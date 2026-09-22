@@ -58,6 +58,7 @@ if auth_status:
         "MOUNT API": ["LNG_TK1", "LNG_TK2"],
         "MOUNT ASAHI": ["LNG_TK1", "LNG_TK2"],
         "MOUNT KITA": ["LNG_TK1", "LNG_TK2"],
+        "MOUNT VICTORIA": ["LNG_TK1", "LNG_TK2"],
         "MOUNT AMELIOR": ["LNG_TK1", "LNG_TK2"],
         "MOUNT HENG": ["LNG_TK1", "LNG_TK2"],
         "MOUNT GOWER": ["LNG_TK1", "LNG_TK2"],
@@ -617,7 +618,7 @@ if auth_status:
             LNG_TK1_cap = 1613
             identity = "1400TEU_cont"   
 
-        elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA"]: #210k_bulk_cssc
+        elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA", "MOUNT VICTORIA"]: #210k_bulk_cssc
             BOG_max = 500
             LNG_TK1_cap = 3051.291
             LNG_TK2_cap = 3050.947
@@ -1551,7 +1552,7 @@ if auth_status:
                 BOG_max = 500
                 LNG_TK1_cap = 1613
                 identity = "1400TEU_cont"  
-            elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA"]: #210k_bulk_cssc
+            elif ship_id  in ["MOUNT ASAHI", "MOUNT KITA", "MOUNT VICTORIA"]: #210k_bulk_cssc
                 BOG_max = 500
                 LNG_TK1_cap = 3051.291
                 LNG_TK2_cap = 3050.947
